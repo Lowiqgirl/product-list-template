@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./scripts.js" defer></script>
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-body">
+      <div class="main-body-header">
+        <h1 class="header-title">Desserts</h1>
+      </div>
+      <div class="main-body-goods">
+        <ul class="goods-list">
+        </ul>
+      </div>
+    </div>
+    <div class="cart">
+      <div class="cart-header">
+        <h2 class="cart-title">Your cart</h2>
+        <h2 class="cart-counter">(0)</h2>
+      </div>
+      <div class="cart-body">
+        <div class="cart-empty"> 
+          <img class="icon" src="./assets/images/illustration-empty-cart.svg" alt="empty-cart">
+          <div class="cart-body-description">
+            <p class="subtitle">Your added items will appear here</p>
+          </div>
+        </div>
+        <div class="cart-full visually-hidden">
+          <ul class="list">
+          </ul>
+          <div class="cart-footer">
+            <div class="order">
+              <p>Order Total</p>
+              <h3 class="total-cost">$46.50</h3>
+            </div>
+            <div class="adv">
+              <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon">
+              <p>This is a <a href="/">carbon-neutral</a> delivery</p>
+            </div>
+            <button class="button-order-confirmation">Confirm Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="order-confirmation-overlay visually-hidden">
+    <div class="order-confirmation-menu">
+      <div class="order-confirmation-header">
+        <img class="icon" src="./assets/images/icon-order-confirmed.svg" alt="">
+        <h1 class="order-title">Order confirmed</h1>
+        <p class="subtitle">We hope you enjoy your food!</p>
+      </div>
+      <div class="order-confirmation-body">
+        <Ul class="list">
+          <li class="item">
+            <div class="cart-item">
+              <div class="cart-item-alt">
+                <img class="order-image" src="./assets/images/image-tiramisu-desktop.jpg" alt="">
+                <div class="cart-main">
+                  <h4 class="item-title">Classic tiramisu</h4>
+                  <div class="item-extra">
+                    <p class="item-amount">1</p>
+                    <div class="item-costs">
+                      <p class="cost-for-one">5.50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cost-for-everything-alt">
+                <p class="cost-for-everything">5.50</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="cart-item">
+              <div class="cart-item-alt">
+                <img class="order-image" src="./assets/images/image-tiramisu-desktop.jpg" alt="">
+                <div class="cart-main">
+                  <h4 class="item-title">Classic tiramisu</h4>
+                  <div class="item-extra">
+                    <p class="item-amount">1</p>
+                    <div class="item-costs">
+                      <p class="cost-for-one">5.50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cost-for-everything-alt">
+                <p class="cost-for-everything">5.50</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="cart-item">
+              <div class="cart-item-alt">
+                <img class="order-image" src="./assets/images/image-tiramisu-desktop.jpg" alt="">
+                <div class="cart-main">
+                  <h4 class="item-title">Classic tiramisu</h4>
+                  <div class="item-extra">
+                    <p class="item-amount">1</p>
+                    <div class="item-costs">
+                      <p class="cost-for-one">5.50</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cost-for-everything-alt">
+                <p class="cost-for-everything">5.50</p>
+              </div>
+            </div>
+          </li>
+        </Ul>
+        <div class="order">
+          <p>Order Total</p>
+          <h3 class="total-cost">$46.50</h3>
+        </div>
+      </div>
+      <button class="button-order-confirmation">Start new order</button>
+    </div>
+  </div>
+  
+</body>
+
+</html>
